@@ -1,0 +1,23 @@
+html{
+    font-family: "Arial";
+}
+
+h2 a{
+    color: seagreen;
+}
+
+.filmesHoje{
+    color: darkred;
+}
+
+.filmesAmanha{
+    color: darkblue; 
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 20px;
+}
