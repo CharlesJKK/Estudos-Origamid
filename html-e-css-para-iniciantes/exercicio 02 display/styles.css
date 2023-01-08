@@ -1,0 +1,36 @@
+body{
+    font-family: "Arial";
+    margin: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    color: white;
+    margin: 0;
+}
+
+.divContainer{
+    background-color: #111;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+span{
+    color: #febe01;
+}
+
+p{
+    color: #b2b2b2;
+}
+
+button{
+    border: 0;
+    background-color: #febe01;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
