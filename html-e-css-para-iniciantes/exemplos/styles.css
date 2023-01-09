@@ -1,4 +1,7 @@
-/*h1,
+/*
+
+//seleciona dois elementos
+h1,
 h2 {
   color: blue;
 }
@@ -16,4 +19,21 @@ p a {
 //Seleciona um elemento pela classe
 .menosimportante {
     color: red;
-}*/
+}
+
+//lados do margin são em sentido horário: top, right, bottom e left 
+
+//site para consultar funcionamento de grid https://origamid.com/projetos/grid/
+
+//grid alinha os elementos dentro dele em conlunas e linhas
+.grid{
+  grid-template-columns: 100px 100px; // cada propriedade equivale a uma coluna, é possível utilizar fr para distribuir de forma fracionária com o espaço restante;
+  grid-column: 1 / -1; // organiza da linha 1 até a última linha, é possível utlizar 1 / (linha desejada).
+  grid-column: span 2; utilizado para expandir um item pela quantidade de colunas desejadas.
+}
+
+//flexbox: display: os filhos passam a tamanho flexível e ficam um do lado da outra.
+//flex-wrap: wrap; quebra para uma próxima linha caso não caiba todos os elementos em uma linha.
+//gap: define uma distância entre os elementos.
+//place-content = junção do justify-content e align-itens.
+*/
