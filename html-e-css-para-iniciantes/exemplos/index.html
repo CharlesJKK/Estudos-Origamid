@@ -9,3 +9,76 @@
         <h1 id="logo">HTML PADRÃO</h1>
     </body>
 </html>
+
+<!-- SEMÂNTICA
+//Semântica: importante por causa da acessibilidade.
+//Headings(h1, h2 e h3) um dos principais métodos utilizados para navegar pelo conteúdo da página.
+//Landmarks(nav, main) os pontos de referência são utlizadas por mais de 75% dos usuário para navegar pelo conteúdo.
+Exemplos Landmarks:
+<main></main>: Marca o conteúdo principal da página. Obs: Utilizar apenas uma por página.
+---------------------
+<nav></nav>: Marca um bloco de navegação. Obs: Usar apenas para a navegação essencial.
+---------------------
+<article></article>: Essa tag representa uma região do site que é autoexplicativa. Geralmente deve conter um título(h1, h2, etc..) props do article : aria-label e aria-labelledby.
+----------------------
+<section></section>: A tag section pode ser utilizada para agrupar o conteúdo do site em diferentes regiões, também recebe a propriedade aria-abel. Obs:O h1 é impactado em termos visuais quando utilizado na section.
+----------------------
+<aside></aside>: A tag aside é utilizada para marcar conteúdo complementar ao principal do site.
+Ex: Lista de posts mais visitados, informações extras como a descrição de um termo usado no artigo e mais.
+----------------------
+<header></header>: Marca o cabeçalho do site (banner), onde geralmente estão presentes a marca, navegação do site e as vezes uma informação introdutória. Obs: Apenas cria uma landmark se não estiver dentro de main, section, article ou aside.
+----------------------
+<footer></footer>: Marca o rodapé do site, geralmente contém informação sobre os direitos autorias, quem escreveu e links para documentos relacionados. Obs: Mesma condição do header.
+ -->
+
+<!-- LISTAS
+As listas possuem alguns estilos padrões aplicados, como padding, margin e list-style.
+<ul></ul>: Marca uma lista de itens sem ordem (unordered list). Cada item da lista deve ser marcado com uma <li></li>. Ex: <ul><li>Macarrão</li><li>Miojo</li></ul>.
+-------------------------
+<ol></ol>: Marca uma lista ordenada(ordered list). Sempre com li dentro também.
+-------------------------
+<dl></dl>: Marca uma lista de descrições (description list). A lista é criada com dois elementos <dt>: Marca o termo/frase a ser definido, e <dd>: Marca a definição do termo acima..
+    Ex: <dt>
+            <dt>Quais as formas de pagamento?</dt>
+            <dd>Dinheiro ou Cartão de Crédito</dd>
+        </dt>
+-->
+
+<!-- NAVEGAÇÃO
+    //É muito comum utilizar listas desordenadas(ul) dentro de um bloco de navegação, pois um menu é uma lista de links
+    Ex: <nav>
+            <ul>
+                <li><a href="/">Sobre</a></li>
+                <li><a href="/">Produtos</a></li>
+                <li><a href="/">Contato</a></li>
+            </ul>
+        </nav>
+    //Obs:Não é obrigatório o uso de listas, é indicado para listas grandes, mas para listas menores é melhor usar a navegação sem a lista.
+ -->
+
+<!-- SEMÂNTICA 2
+Outras tags semânticas.
+-------------------------
+<blockquote></blockquote>: Marca uma citação extensa e recebe um atributo cite com a fonte.
+
+Ex:<blockquote cite="https://tseliot.com/">
+        <p>
+        Não devemos parar de explorar, e o fim de toda nossa exploração será chegar
+        onde começamos e conhecer o lugar pela primeira vez
+        </p>
+    </blockquote>
+    <p>T. S. Eliot</p>
+-------------------------
+<q></q>: Marca uma citação inline.
+Ex: <p>
+        Como já dizia o poeta <q>se HTML está difícil, nem comece com JavaScript</q>
+    </p>
+-------------------------
+<cite></cite>: É utilizada para citar o nome de um trabalho, livro, filme, peça ou algo parecido. Obs: Não é para citar o ator.
+Ex: <p>Eu indico o livro <cite>Mythos</cite> escrito por Stephen Fry</p>
+-------------------------
+<em></em>: É utilizada para dar enfase em uma frase/palavra do texto.
+Ex: <p><em>Nenhum animal</em> foi maltratado na produção deste conteúdo.</p>
+-------------------------
+<strong></strong>: É utilizada para marcar uma parte importante do conteúdo em negrito.
+ -->

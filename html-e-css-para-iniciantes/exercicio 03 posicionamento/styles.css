@@ -1,6 +1,6 @@
 body{
     background-color: #f7f7f7;
-    font-family: "Arial";
+    font-family: Arial, Arial, Helvetica, sans-serif;
     display: grid;
     margin: 0;
     gap: 60px;
@@ -34,13 +34,12 @@ button{
     border: 0;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
-    margin: 15px;
     cursor: pointer;
 }
 
 .botoes{
     display: flex;
-    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .detail{
