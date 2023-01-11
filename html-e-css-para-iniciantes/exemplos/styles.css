@@ -95,4 +95,12 @@ p a {
   .lista-1 li:nth-child(odd): Seleciona os elementos em ímpares.
   .lista-1 li:not(:first-child, :last-child): Nega o estilo escolhido aos elementos escolhidos entre ().
 }
+
+---------------------------Pseudo-Elements
+.Elements{
+  h1::after{}: Cria um texto após o seletor, porém é normalmente utlizado para decoração de conteúdo, assim evitando usso desnecessário no html, além disso é essencial o uso do elemento "content" para o after existir, mesmo que o content esteja vazio.
+  h1::before{}: Mesma coisa do after, porém caso desejado cria antes do seletor.
+  h1::first-line{}: Seleciona a primeira linha do conteúdo para estilização.
+  h1::first-letter{}: Seleciona a primeira letra do conteúdo para estilização.
+}
 */
