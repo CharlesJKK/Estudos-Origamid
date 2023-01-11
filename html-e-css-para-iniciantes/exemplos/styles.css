@@ -23,17 +23,50 @@ p a {
 
 //lados do margin são em sentido horário: top, right, bottom e left 
 
+---------------------------Grid
+
 //site para consultar funcionamento de grid https://origamid.com/projetos/grid/
 
 //grid alinha os elementos dentro dele em conlunas e linhas
-.grid{
+.Grid{
   grid-template-columns: 100px 100px; // cada propriedade equivale a uma coluna, é possível utilizar fr para distribuir de forma fracionária com o espaço restante;
   grid-column: 1 / -1; // organiza da linha 1 até a última linha, é possível utlizar 1 / (linha desejada).
   grid-column: span 2; utilizado para expandir um item pela quantidade de colunas desejadas.
+  gap: define uma distância entre os elementos.
 }
 
-//flexbox: display: os filhos passam a tamanho flexível e ficam um do lado da outra.
-//flex-wrap: wrap; quebra para uma próxima linha caso não caiba todos os elementos em uma linha.
-//gap: define uma distância entre os elementos.
-//place-content = junção do justify-content e align-itens.
+---------------------------Flexbox
+.Flexbox{
+  display: flex;
+  flexbox: display: os filhos passam a tamanho flexível e ficam um do lado da outra.
+  flex-wrap: wrap; quebra para uma próxima linha caso não caiba todos os elementos em uma linha.
+  gap: define uma distância entre os elementos.
+  place-content = junção do justify-content e align-itens.
+}
+
+---------------------------Unidades
+.Unidades{
+  rem: Unidade relativa ao tamhno da fonte do elemento raiz html. Normal 1rem = 16px
+  em: Unidade relativa ao tamnho da fonte do elemento pai.
+  vh e vw: viewport height e viewport width, nomes auto-descritiveis.
+  calc: É uma função de css que retorna um valor com base no cálculo efetuado entre os (). Podemos combinar unidades. Ex: (100vh - 10px)
+}
+
+---------------------------Tipografia
+.Tipografia{
+  font-family: Escolhe a fonte que você quer.
+  font-size: Tamanho da fonte.
+  font-weight: Se a fonte seria bold ou regular ou normal e afins.
+  font-style: Estilo da fonte, como itálico
+  line-height: Tamanho do espaçamento entre as linhas.
+  text-decoration: Decoração da fonte como underline.
+  text-transform: Deixa o texto alterado de alguam forma, como em caps com uppercase.
+  text-indent: Identa a primeira linha para direita para destacar.
+  text-align: A linha o texto a direção escolhida.
+  text-shadow: Somba de um texto. Ex: 5px 5px 10px gray;
+  letter-spacing: Espaçamento entre as letras.
+}
+
+---------------------------Background
+
 */
