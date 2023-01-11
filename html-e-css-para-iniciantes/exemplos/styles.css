@@ -68,5 +68,31 @@ p a {
 }
 
 ---------------------------Background
+.Background{
+  background-color: Muda a cor de fundo.
+  background-image: Muda o fundo para a imagem escolhida.
+  background-repeat: Diz se o fundo deve ou não repetir.
+  background-size: Diz qual o tamanho da imagem e como ela se comporta .
+  background-position: Escolhe a posição que ela fica e como ela começa a ser cortada.
+  background-image: linear-gradient: Serve para definir várias cores de fundo de forma gradiante e linear.
+  background-image: radial-gradient: Mesma coisa do linear, mas em forma radial, como um ovo ou um circulo.
 
+}
+
+---------------------------Pseudo-classes
+.Estado{
+  button:hover{}: Aplica o estilo escolhido ao botão quando mouse passa por cima.
+  button:focus{}: Aplica o estilo escolhido quando o elemento fica em foco(usando o tab).
+  button:active{}: Aplica o estilo escolhido quando clicamos no elemento.
+  button:visited{}: Aplica o estilo escolhido para links que já foram visitados.
+}
+.Seletores{
+  .lista-1 li:first-child: Seleciona o primeiro elemento.
+  .lista-1 li:last-child: Seleciona o último elemento.
+  .lista-1 li:nth-child(3n): Seleciona os elementos de 3 em 3(ou sucessivamente ex: 2n, 4n e etc).
+  .lista-1 li:nth-child(even): Seleciona os elementos em pares.
+  .lista-1 li:nth-child(4): Seleciona o quarto elemento.
+  .lista-1 li:nth-child(odd): Seleciona os elementos em ímpares.
+  .lista-1 li:not(:first-child, :last-child): Nega o estilo escolhido aos elementos escolhidos entre ().
+}
 */
