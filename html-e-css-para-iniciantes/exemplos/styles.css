@@ -33,6 +33,7 @@ p a {
   grid-column: 1 / -1; // organiza da linha 1 até a última linha, é possível utlizar 1 / (linha desejada).
   grid-column: span 2; utilizado para expandir um item pela quantidade de colunas desejadas.
   gap: define uma distância entre os elementos.
+  grid-template-columns:repeat(auto-fit): O repeat com auto-fit irá gerar o total de colunas que forem necessárias para preencher a área.(order: É possível mudar a ordem visual dos elementos na tela. Importante a ordem semântica (leitura da tela), não é afetada pelo order.)
 }
 
 ---------------------------Flexbox
@@ -102,5 +103,28 @@ p a {
   h1::before{}: Mesma coisa do after, porém caso desejado cria antes do seletor.
   h1::first-line{}: Seleciona a primeira linha do conteúdo para estilização.
   h1::first-letter{}: Seleciona a primeira letra do conteúdo para estilização.
+}
+
+---------------------------Media Queries
+@media(max-width: 600px){
+  min-width: Usado para dizer quando a tela é maior que a quantidade de pixels escolhida.
+  max-width: Usado para dizer quando a tela é menor que a quantidade de pixels escolhida.
+  Ex's: @media (max-width: 500px): Abaixo de 500px.
+        @media (min-width: 600px): Acima de 600px.
+        @media (min-width: 800px) and (max-width: 900px): Entre 800px e 900px..
+}
+
+---------------------------Object-fit
+.Img{
+  object-fit: cover: Funciona como o background-size. Contém valores como cover, contain, fill.
+  object-position: Posiciona o objeto, indicando como ele deve ser cortado. top left, top center.
+}
+
+---------------------------Max-width
+.max-width{
+  max-width: O max-width determina um valor máximo de largura do elemento. Não deixe os elementos livres na tela, principalmente os textos.
+  Unidades: ch: Unidade relacionada à largura do caractere 0 da tipografia.
+  Largura do texto:  Para corpo de texto entre 50-75 caracteres é o ponto ideal.
+  margin: 0 auto: Alinha o conteúdo ao centro(cima e baixo 0 e auto pros lados.)
 }
 */
