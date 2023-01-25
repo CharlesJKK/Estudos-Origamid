@@ -87,6 +87,7 @@ p a {
   button:active{}: Aplica o estilo escolhido quando clicamos no elemento.
   button:visited{}: Aplica o estilo escolhido para links que já foram visitados.
 }
+
 .Seletores{
   .lista-1 li:first-child: Seleciona o primeiro elemento.
   .lista-1 li:last-child: Seleciona o último elemento.
