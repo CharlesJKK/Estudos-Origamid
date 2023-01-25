@@ -143,4 +143,16 @@ p a {
   div > p{}: Apenas o p que for filho direto de "div".
   *: Seleciona todos os elementos do site.
 }
+
+---------------------------Propriedas Customizadas
+.Customizadas{
+  :root{}: seleciona toda a raiz.
+  :root{
+    --tamanho-titulo: 3rem;
+    --cor-primaria: #84e;
+  }: cria um var que você pode usar como estilo global, podendo utilizar como Ex: h1{font-size: var(--tamanho-titulo)}
+  @media prefers-color-scheme: irá executar o código css conforme a preferência de tema do usuário como dark ou light.
+  
+
+}
 */
