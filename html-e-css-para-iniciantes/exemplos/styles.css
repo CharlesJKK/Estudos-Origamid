@@ -88,16 +88,6 @@ p a {
   button:visited{}: Aplica o estilo escolhido para links que já foram visitados.
 }
 
-.Seletores{
-  .lista-1 li:first-child: Seleciona o primeiro elemento.
-  .lista-1 li:last-child: Seleciona o último elemento.
-  .lista-1 li:nth-child(3n): Seleciona os elementos de 3 em 3(ou sucessivamente ex: 2n, 4n e etc).
-  .lista-1 li:nth-child(even): Seleciona os elementos em pares.
-  .lista-1 li:nth-child(4): Seleciona o quarto elemento.
-  .lista-1 li:nth-child(odd): Seleciona os elementos em ímpares.
-  .lista-1 li:not(:first-child, :last-child): Nega o estilo escolhido aos elementos escolhidos entre ().
-}
-
 ---------------------------Pseudo-Elements
 .Elements{
   h1::after{}: Cria um texto após o seletor, porém é normalmente utlizado para decoração de conteúdo, assim evitando usso desnecessário no html, além disso é essencial o uso do elemento "content" para o after existir, mesmo que o content esteja vazio.
@@ -127,5 +117,30 @@ p a {
   Unidades: ch: Unidade relacionada à largura do caractere 0 da tipografia.
   Largura do texto:  Para corpo de texto entre 50-75 caracteres é o ponto ideal.
   margin: 0 auto: Alinha o conteúdo ao centro(cima e baixo 0 e auto pros lados.)
+}
+
+---------------------------Seletores e Seletores de Atributos
+.Seletores{
+  .lista-1 li:first-child: Seleciona o primeiro elemento.
+  .lista-1 li:last-child: Seleciona o último elemento.
+  .lista-1 li:nth-child(3n): Seleciona os elementos de 3 em 3(ou sucessivamente ex: 2n, 4n e etc).
+  .lista-1 li:nth-child(even): Seleciona os elementos em pares.
+  .lista-1 li:nth-child(4): Seleciona o quarto elemento.
+  .lista-1 li:nth-child(odd): Seleciona os elementos em ímpares.
+  .lista-1 li:not(:first-child, :last-child): Nega o estilo escolhido aos elementos escolhidos entre ().
+}
+
+.SeletoresAtributos{
+  []: Seleciona os elementos que tiverem o atributo dentro dos [].
+  [name="email"]: Seleciona apenas o elemento que tiver o atributo e nesse caso o valor "email".
+  [href^="#"]: o ^ faz que sejam selecionados os atributos que comecem com o valor escolhido, nesse caso "#".
+  [href$=".com"]: o $ faz que sejam selecionados os atributos que terminem com o valor escolhido, nesse caso ".com".
+}
+
+.Sinais{
+  article p:last-child{Assim é possível escolher o ultimo elemento ou elemento desejado de algo} mas é possível substituir isso pelo sinal abaixo.
+  p + p{}: Seleciona todo p que vier após um elemento p.
+  div > p{}: Apenas o p que for filho direto de "div".
+  *: Seleciona todos os elementos do site.
 }
 */
